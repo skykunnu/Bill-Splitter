@@ -16,11 +16,11 @@ main{
     display: flex;
     margin-top: 10px;
     border: none;
-    padding-left:10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-    background-color: #F8F6E3;
+    padding-left:15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    background-color: #FFF2E1;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     
@@ -57,13 +57,17 @@ main > div{
 }
 
 .bill-output{
-    background-color: #F7DCB9;
+    background-color: #FFEC9E;
     color: #000000;
     border-radius: 12px;
     margin-left: 10px;
     margin-top: 50px;
     padding: 30px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
    
 }
 .input-container{
@@ -88,6 +92,7 @@ main > div{
 
 }
 
+/* These are used to hide arrows from input type=text */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -95,3 +100,70 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+
+.tip-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* using this repeat function it will adjust the columns accordingly, don't need to add media queries.*/
+  gap: 15px;
+  margin-bottom: 12px;
+}
+.Tip{
+  border: 1px solid grey;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightgrey;
+  color: #000000;
+  cursor: pointer;
+}
+.P1{
+  margin-bottom: 8px;
+  color: #000000;
+  font-weight: bold;
+  font-size: medium;
+}
+.gray-input{
+ border: none;
+ outline: none;
+ background-color: #ddd;
+ font-size: 16px;
+ width: 100%;
+ border-radius: 4px;
+ padding: 8px 4px;
+}
+.generate-btn{
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 15px;
+  border-radius: 7px;
+  margin-top: 15px;
+  background-color: #D4D925;
+  font-weight: bold;
+}
+.bill-output > p >span{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bill-output > p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.reset-btn{
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 7px;
+  font-weight: bold;
+  background-color: #FFAF45;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+
+
