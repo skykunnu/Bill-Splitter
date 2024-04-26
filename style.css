@@ -7,27 +7,65 @@ body{
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     
+    
+
 }
 main{
     max-width: 700px;
     margin: 0px auto;
     display: flex;
     margin-top: 10px;
-    border: 1px solid black;
+    border: none;
     padding-left:10px;
     padding-right: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
-    /* background-color: #f3f2ade5; */
-    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    background-color: #F8F6E3;
     box-sizing: border-box;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: main 4s ease-in-out;
     
 }
+
+@keyframes main{
+    
+    0% {
+    
+      transform: scale(1, 1);
+    }
+    
+    50% {
+    
+      transform: scale(1.2, 1.2);
+    }
+    
+    100% {
+    
+      transform: scale(1.0, 1.0);
+    }
+  }
 h1{
     text-align: center;
     padding-top: 20px;
+    animation: h1 5s infinite;
 }
+@keyframes h1 {
+    
+    0% {
+    
+      transform: scale(1, 1);
+    }
+    
+    50% {
+    
+      transform: scale(1.2, 1.2);
+    }
+    
+    100% {
+    
+      transform: scale(1.0, 1.0);
+    }
+  }
 .p1{
     font-weight: bold;
     font-size: large;
@@ -49,7 +87,7 @@ main > div{
 }
 
 .bill-output{
-    background-color: #E0CCBE;
+    background-color: #F7DCB9;
     color: #000000;
     border-radius: 12px;
     margin-left: 10px;
@@ -59,6 +97,9 @@ main > div{
    
 }
 
+.tip{
+
+}
 .input-container input{
  border: none;
  outline: none;
