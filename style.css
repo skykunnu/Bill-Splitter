@@ -23,27 +23,9 @@ main{
     background-color: #F8F6E3;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    animation: main 4s ease-in-out;
     
 }
 
-@keyframes main{
-    
-    0% {
-    
-      transform: scale(1, 1);
-    }
-    
-    50% {
-    
-      transform: scale(1.2, 1.2);
-    }
-    
-    100% {
-    
-      transform: scale(1.0, 1.0);
-    }
-  }
 h1{
     text-align: center;
     padding-top: 20px;
@@ -74,18 +56,6 @@ main > div{
     width: 100%;
 }
 
-.input-container{
-    border: 1px solid ;
-    padding: 0px 4px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    margin-top: -10px;
-    background-color: #ffffff;
-    
-}
-
 .bill-output{
     background-color: #F7DCB9;
     color: #000000;
@@ -96,9 +66,16 @@ main > div{
     font-weight: bold;
    
 }
-
-.tip{
-
+.input-container{
+  border: 1px solid ;
+  padding: 0px 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-top: -10px;
+  background-color: #ffffff;
+  
 }
 .input-container input{
  border: none;
