@@ -14,3 +14,11 @@ Key Features:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is how the UI looks like
 ![image](https://github.com/skykunnu/Bill-Splitter/assets/73191595/77bbdb92-90d0-4d7f-82d2-90a70ef095dc)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+This is how the UI looks like when any tip is selected
+![image](https://github.com/skykunnu/Bill-Splitter/assets/73191595/db877429-04e7-4316-aff3-802dc6e96164)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+This is how the UI looks like when any custom tip is input. 
+![image](https://github.com/skykunnu/Bill-Splitter/assets/73191595/5fd393d5-18a8-4677-963c-547a27b3aa90)
