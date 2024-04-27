@@ -156,6 +156,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #4477CE;
   cursor: pointer;
   margin-top: 35px;
+  color: #ffffff;
 }
 
 
