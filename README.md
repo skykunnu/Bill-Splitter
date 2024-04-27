@@ -5,8 +5,12 @@ The Bill Splitter with Tip Calculator is an enhanced version of the traditional 
 Key Features:
 
 1. Input Bill Amount 
-2. Specify No of People 
+2. Specify No Of People 
 3. Tip Calculation 
 4. Generate Bill 
 5. Handle Invalid Inputs  
 6. Responsive Design
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This how the UI looks like
+![image](https://github.com/skykunnu/Bill-Splitter/assets/73191595/77bbdb92-90d0-4d7f-82d2-90a70ef095dc)
