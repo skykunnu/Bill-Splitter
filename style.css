@@ -20,7 +20,7 @@ main{
     padding-right: 15px;
     padding-bottom: 15px;
     border-radius: 15px;
-    background-color: #FFF2E1;
+    background-color: #ffffff;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     
@@ -29,25 +29,7 @@ main{
 h1{
     text-align: center;
     padding-top: 20px;
-    animation: h1 5s infinite;
 }
-@keyframes h1 {
-    
-    0% {
-    
-      transform: scale(1, 1);
-    }
-    
-    50% {
-    
-      transform: scale(1.2, 1.2);
-    }
-    
-    100% {
-    
-      transform: scale(1.0, 1.0);
-    }
-  }
 .p1{
     font-weight: bold;
     font-size: large;
@@ -55,6 +37,7 @@ h1{
 main > div{
     width: 100%;
 }
+
 
 .bill-output{
     background-color: #FFEC9E;
@@ -66,9 +49,7 @@ main > div{
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
-   
+    gap: 20px; 
 }
 .input-container{
   border: 1px solid ;
@@ -106,18 +87,28 @@ input[type=number]::-webkit-outer-spin-button {
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* using this repeat function it will adjust the columns accordingly, don't need to add media queries.*/
   gap: 15px;
   margin-bottom: 12px;
+  color: #000000;
 }
-.Tip{
-  border: 1px solid grey;
+.tip{
   padding: 1px;
   margin: 1px;
   border-radius: 5px;
   text-align: center;
-  background-color: lightgrey;
-  color: #000000;
+  background-color: #9c60ff;
   cursor: pointer;
+  font-size: 20px;
 }
-.P1{
+.tip.selected{
+  outline: 4px solid rgba(255,162,0,0.888);
+}
+
+.numberofpeople{
+  margin-bottom: 8px;
+  color: #000000;
+  font-weight: bold;
+  font-size: medium;
+}
+.select-tip{
   margin-bottom: 8px;
   color: #000000;
   font-weight: bold;
@@ -139,8 +130,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 15px;
   border-radius: 7px;
   margin-top: 15px;
+
   background-color: #D4D925;
   font-weight: bold;
+  cursor: pointer;
 }
 .bill-output > p >span{
   font-size: 20px;
@@ -166,4 +159,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-
+@media(max-width:746px)
+{
+  main{
+    flex-direction: column;
+    margin-block:20px;
+  }
+  .bill-output{
+    margin: 20px auto;
+  }
+}
