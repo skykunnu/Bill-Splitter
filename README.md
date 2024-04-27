@@ -4,9 +4,9 @@ The Bill Splitter with Tip Calculator is an enhanced version of the traditional 
 
 Key Features:
 
-Input Bill Amount <n/>
-Specify No of People <n/>
-Tip Calculation <n/>
-Generate Bill <n/>
-Handle Invalid Inputs <n/> 
+Input Bill Amount <b/>
+Specify No of People <b/>
+Tip Calculation <b/>
+Generate Bill <b/>
+Handle Invalid Inputs <b/> 
 Responsive Design
