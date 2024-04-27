@@ -12,5 +12,5 @@ Key Features:
 6. Responsive Design
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-This how the UI looks like
+This is how the UI looks like
 ![image](https://github.com/skykunnu/Bill-Splitter/assets/73191595/77bbdb92-90d0-4d7f-82d2-90a70ef095dc)
