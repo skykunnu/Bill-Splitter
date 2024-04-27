@@ -9,9 +9,9 @@ const tipsContainer=document.querySelector(".tip-container")
 const resetBtn=document.querySelector(".reset-btn")
 
 
-let tipPercentage;
+let tipPercentage=0;
 
-generateBillBtn.addEventListener('click', ()=>{ // 
+generateBillBtn.addEventListener('click', ()=>{ 
     const billAmount= parseInt(billAmountInput.value) // Converting string value into integer value
     const numberofPeople= parseInt(numberOfPeopleInput.value)
     
@@ -23,6 +23,7 @@ generateBillBtn.addEventListener('click', ()=>{ //
     tipAmountOutput.innerText=`₹${Math.ceil(tipAmount)}`;
     TotalBillOutput.innerText=`₹${Math.ceil(TotalBill)}`
     eachPersonBillOutput.innerText=`₹${Math.ceil(eachPersonBill)}`;
+    resetBtn.disabled=false
    
 
 })
@@ -30,7 +31,7 @@ generateBillBtn.addEventListener('click', ()=>{ //
  // Event delegation (whenever tips are clicked this event listner shall triggered)   
 tipsContainer.addEventListener('click',(e)=>{ 
     if(e.target!=tipsContainer){
-        [...tipsContainer.children].forEach((tip) => tip.classList.remove('selected')); /* this statement is removing previously selected tips*/
+        [...tipsContainer.children].forEach((tip) => tip.classList.remove('selected')); /* this statement is removing previously selected tips becoz no two tips can be selected at one time*/
         e.target.classList.add('selected')
         tipPercentage=parseInt(e.target.innerText) // here tipPercentage will store the tips when clicked on it.
         customTipInput.value=""
@@ -44,7 +45,7 @@ customTipInput.addEventListener('input',(e)=>{
 })
 
 resetBtn.addEventListener('click',()=>{
-    tipPercentage=undefined
+    tipPercentage=0
     billAmountInput.value=" "
     customTipInput.value=" "
     numberOfPeopleInput.value=" ";
@@ -52,5 +53,6 @@ resetBtn.addEventListener('click',()=>{
     tipAmountOutput.innerText=" "
     TotalBillOutput.innerText=" "
     eachPersonBillOutput.innerText=" "
+    resetBtn.disabled=true
     
 })
